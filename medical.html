@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MediCare Pharmacy</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#" aria-label="MediCare Pharmacy home">
+      <span class="brand-mark">+</span>
+      <span>MediCare Pharmacy</span>
+    </a>
+
+    <nav class="nav-links" aria-label="Primary navigation">
+      <a href="#shop">Shop</a>
+      <a href="#services">Services</a>
+      <a href="#support">Support</a>
+    </nav>
+
+    <button class="cart-button" type="button" aria-label="View cart">
+      <span>Cart</span>
+      <strong id="cartCount">0</strong>
+    </button>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="heroTitle">
+      <div class="hero-copy">
+        <p class="eyebrow">Trusted neighborhood pharmacy</p>
+        <h1 id="heroTitle">Medicines, wellness essentials, and care support in one place.</h1>
+        <p class="hero-text">
+          Order common health products, request prescription help, and find daily wellness items from a friendly medical shop.
+        </p>
+        <div class="hero-actions">
+          <a class="primary-action" href="#shop">Shop products</a>
+          <a class="secondary-action" href="#services">See services</a>
+        </div>
+      </div>
+
+      <div class="hero-panel" aria-label="Quick pharmacy summary">
+        <div>
+          <span class="metric">24/7</span>
+          <span>Emergency counter</span>
+        </div>
+        <div>
+          <span class="metric">30 min</span>
+          <span>Local delivery window</span>
+        </div>
+        <div>
+          <span class="metric">Rx</span>
+          <span>Prescription guidance</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="controls" aria-label="Product filters">
+      <label class="search-box">
+        <span>Search products</span>
+        <input id="searchInput" type="search" placeholder="Search medicine, vitamins, care items">
+      </label>
+
+      <div class="category-tabs" role="list" aria-label="Categories">
+        <button class="category active" type="button" data-category="all">All</button>
+        <button class="category" type="button" data-category="medicine">Medicine</button>
+        <button class="category" type="button" data-category="wellness">Wellness</button>
+        <button class="category" type="button" data-category="care">Personal care</button>
+        <button class="category" type="button" data-category="devices">Devices</button>
+      </div>
+    </section>
+
+    <section class="shop-layout" id="shop">
+      <div>
+        <div class="section-heading">
+          <p class="eyebrow">Available today</p>
+          <h2>Featured pharmacy products</h2>
+        </div>
+        <div class="product-grid" id="productGrid" aria-live="polite"></div>
+      </div>
+
+      <aside class="checkout" aria-labelledby="cartTitle">
+        <h2 id="cartTitle">Your cart</h2>
+        <div id="cartItems" class="cart-items">
+          <p class="empty-cart">No items added yet.</p>
+        </div>
+        <div class="cart-total">
+          <span>Total</span>
+          <strong id="cartTotal">$0.00</strong>
+        </div>
+        <button class="checkout-button" type="button">Request order</button>
+      </aside>
+    </section>
+
+    <section class="services" id="services" aria-labelledby="servicesTitle">
+      <div class="section-heading">
+        <p class="eyebrow">Pharmacy support</p>
+        <h2 id="servicesTitle">Care services</h2>
+      </div>
+      <div class="service-grid">
+        <article>
+          <span class="service-icon">Rx</span>
+          <h3>Prescription review</h3>
+          <p>Get help checking dosage instructions, refill timing, and medicine availability.</p>
+        </article>
+        <article>
+          <span class="service-icon">BP</span>
+          <h3>Health checks</h3>
+          <p>Walk in for blood pressure, glucose, temperature, and basic wellness readings.</p>
+        </article>
+        <article>
+          <span class="service-icon">⛑</span>
+          <h3>First-aid guidance</h3>
+          <p>Find wound care, pain relief, cold remedies, and home care essentials fast.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" id="support">
+    <div>
+      <strong>MediCare Pharmacy</strong>
+      <p>Open daily, 8:00 AM - 11:00 PM. Emergency support counter available overnight.</p>
+    </div>
+    <a href="tel:+10000000000">Call support</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
